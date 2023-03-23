@@ -43,7 +43,7 @@ var createParser = function (dialect) { return ({
 exports.parsers = {
     sqlite: createParser("sqlite"),
     bigquery: createParser("bigquery"),
-    hana: createParser("hana"),
+    hana: createParser("sqlite"),
 };
 exports.printers = {
     "sql-cst": {

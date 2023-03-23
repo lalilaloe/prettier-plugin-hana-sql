@@ -47,7 +47,7 @@ const createParser = (dialect: DialectName): Parser<Node> => ({
 export const parsers: Record<string, Parser<Node>> = {
   sqlite: createParser("sqlite"),
   bigquery: createParser("bigquery"),
-  hana: createParser("hana"),
+  hana: createParser("sqlite"),
 };
 
 export const printers: Record<string, Printer> = {

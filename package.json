@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn test && yarn build",
-    "clean": "del dist",
+    "clean": "del /q dist",
     "build": "npm run clean && tsc",
     "test": "jest"
   },

@@ -20,6 +20,11 @@ export const languages: SupportLanguage[] = [
     name: "BigQuery SQL",
     parsers: ["bigquery"],
   },
+  {
+    extensions: [".hdbprocedure"],
+    name: "HANA SQL",
+    parsers: ["hana"],
+  },
 ];
 
 const createParser = (dialect: DialectName): Parser<Node> => ({
@@ -42,6 +47,7 @@ const createParser = (dialect: DialectName): Parser<Node> => ({
 export const parsers: Record<string, Parser<Node>> = {
   sqlite: createParser("sqlite"),
   bigquery: createParser("bigquery"),
+  hana: createParser("hana"),
 };
 
 export const printers: Record<string, Printer> = {

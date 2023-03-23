@@ -1,7 +1,7 @@
 {
-  "name": "prettier-plugin-sql-cst",
+  "name": "prettier-plugin-hana-sql",
   "version": "0.8.1",
-  "description": "Prettier plugin for SQL",
+  "description": "Prettier plugin for HANA SQL",
   "author": "Rene Saarsoo <nene@triin.net>",
   "license": "GPL-3.0-or-later",
   "main": "dist/index.js",
@@ -19,8 +19,8 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn test && yarn build",
-    "clean": "rm -rf dist",
-    "build": "yarn clean && tsc",
+    "clean": "del dist",
+    "build": "npm run clean && tsc",
     "test": "jest"
   },
   "keywords": [

@@ -1,0 +1,16 @@
+import { Node } from "sql-parser-cst";
+export declare const isProgram: (node: any) => node is import("sql-parser-cst").Program;
+export declare const isValuesClause: (node: any) => node is import("sql-parser-cst").ValuesClause;
+export declare const isFuncCall: (node: any) => node is import("sql-parser-cst").FuncCall;
+export declare const isFuncArgs: (node: any) => node is import("sql-parser-cst").FuncArgs;
+export declare const isCreateTableStmt: (node: any) => node is import("sql-parser-cst").CreateTableStmt;
+export declare const isKeyword: (node: any) => node is import("sql-parser-cst").Keyword<string>;
+export declare const isEmpty: (node: any) => node is import("sql-parser-cst").Empty;
+export declare const isJsonLiteral: (node: any) => node is import("sql-parser-cst").JsonLiteral;
+export declare const isStringLiteral: (node: any) => node is import("sql-parser-cst").StringLiteral;
+export declare const isArraySubscript: (node: any) => node is import("sql-parser-cst").ArraySubscript;
+export declare const isAsClause: (node: any) => node is import("sql-parser-cst").AsClause<Node>;
+export declare const isParenExpr: (node: any) => node is import("sql-parser-cst").ParenExpr<Node>;
+export declare const isListExpr: (node: any) => node is import("sql-parser-cst").ListExpr<Node>;
+export declare const isCreateFunctionStmt: (node: any) => node is import("sql-parser-cst").CreateFunctionStmt;
+export declare const isLanguageClause: (node: any) => node is import("sql-parser-cst").LanguageClause;
